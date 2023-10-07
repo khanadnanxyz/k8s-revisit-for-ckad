@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  DB: dev
+  DEBUG: "True"
+  ENV: prod
+  HOST: local
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: kodecloud

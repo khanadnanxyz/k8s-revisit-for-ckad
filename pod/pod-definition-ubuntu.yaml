@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-config
+  labels:
+      name: pod-config
+
+spec:
+  containers:
+    - name: ubuntu-container
+      image: ubuntu
+      ports:
+        - containerPort: 80
+      command: ["sleep"] 
+      args: ["4800"]

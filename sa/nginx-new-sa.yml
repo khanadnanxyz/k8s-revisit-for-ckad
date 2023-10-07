@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-new-sa
+  name: nginx-new-sa
+  namespace: dev
+spec:
+  containers:
+  - image: nginx
+    imagePullPolicy: Always
+    name: nginx-new-sa
+  serviceAccountName: new-sa
